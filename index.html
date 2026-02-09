@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            /* background: #091f4e; */
+           background-color: rgb(1, 1, 17);
+            color: white;
+        }
+
+        .testimonial-section {
+            padding: 10px;
+        }
+
+        .main-title {
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        .desc {
+            margin-top: 15px;
+            line-height: 1.7;
+        }
+
+        .profile-info {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .company {
+            color: #4285F4;
+        }
+
+        /* --- UPDATED IMAGE CSS --- */
+        .testimonial-img {
+            width: 100%;
+            max-width: 300px;
+
+            /* 1. Force a consistent height */
+            max-height: 400px;
+
+            /* 2. Crop the image to fill the box without stretching */
+            object-fit: fill;
+
+            /* 3. Optional: Align position if cropping heads off */
+            /* object-position: top center; */
+
+            border-radius: 15px;
+            padding-top: 15px;
+        }
+
+        /* Thumbnail */
+        .thumb-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .thumb {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: fill;
+            margin: 8px;
+            cursor: pointer;
+            padding: 4px;
+            background: conic-gradient(#0d6efd 0deg, #ddd 0deg);
+            transition: transform 0.2s;
+        }
+
+        .thumb:active {
+            transform: scale(0.95);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="testimonial-section container" style="background-color: rgba(2, 2, 75, 0.3); margin-top: 50px;">
+
+        <div id="testimonialSlider" class="carousel slide" data-bs-ride="false" data-bs-interval="false" style="padding: 10px;">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <div class="main-title">Lion</div>
+                            <p class="desc">
+                                The lion, widely recognized as the king of the beasts, is a majestic apex predator that
+                                stands out as the most social of all big cats. Living in family groups known as prides,
+                                these powerful felines dominate the savannas and grasslands of Africa through remarkable
+                                teamwork and strength. Male lions are famous for their impressive manes, which signify
+                                maturity and provide protection during territorial disputes, while the sleek lionesses
+                                serve as the pride's primary hunters.</p>
+                            <div class="profile-info">
+                                Wild Animal • <span class="company">Grasslands</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 text-center">
+                            <img src="/image/Lion.jfif" class="testimonial-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <div class="main-title">Tiger</div>
+                            <p class="desc">
+                                The tiger, recognized as the world's largest cat species, is a magnificent apex predator
+                                known for its striking orange fur and unique black stripes that serve as natural
+                                camouflage. Unlike lions, these powerful felines are primarily solitary, preferring to
+                                hunt and live alone in diverse habitats ranging from the frozen forests of Russia to the
+                                tropical jungles of India. They are exceptional swimmers who often use water to cool off
+                                or ambush prey, a rare trait among big cats. </p>
+                            <div class="profile-info">
+                                Wild Animal • <span class="company">Forsets</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 text-center">
+                            <img src="/image/Tiger.jfif" class="testimonial-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <div class="main-title">Black Panther</div>
+                            <p class="desc">
+                                The black panther is not a separate species but a colloquial term for melanistic
+                                variants of the leopard (in Africa and Asia) or the jaguar (in the Americas). These
+                                "ghosts of the forest" possess a rare genetic mutation that causes an overproduction of
+                                dark pigment, resulting in a sleek black coat that still hides faint, underlying rosette
+                                patterns visible only in specific light. Primarily solitary and nocturnal, they are
+                                expert stealth hunters that use their dark fur as perfect camouflage in dense, low-light
+                                jungles and rainforests.</p>
+                            <div class="profile-info">
+                                Wild Animal • <span class="company">Rain Forests</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 text-center">
+                            <img src="/image/Panther.jfif" class="testimonial-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <div class="main-title">Leopard</div>
+                            <p class="desc">
+                                The leopard (Panthera pardus) is an incredibly adaptable and widespread apex predator
+                                found across parts of Africa and Asia in a variety of habitats, from rainforests to
+                                deserts. Known for their stunning coat of dark, irregular spots called rosettes, these
+                                felines use their patterns as expert camouflage to stalk their prey. Unlike social
+                                lions, leopards are primarily solitary and territorial animals that hunt mostly at
+                                night.</p>
+                            <div class="profile-info">
+                                Wild Animal • <span class="company">Forests</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 text-center">
+                            <img src="/image/Leopard.jfif" class="testimonial-img">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="thumb-container">
+            <img src="/image/Lion.jfif" class="thumb" data-index="0">
+            <img src="/image/Tiger.jfif" class="thumb" data-index="1">
+            <img src="/image/Panther.jfif" class="thumb" data-index="2">
+            <img src="/image/Leopard.jfif" class="thumb" data-index="3">
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // 1. Initialize Bootstrap Carousel manually
+        const slider = document.querySelector('#testimonialSlider');
+        const carousel = new bootstrap.Carousel(slider);
+        const thumbs = document.querySelectorAll('.thumb');
+
+        // 2. Configuration
+        const slideDuration = 4000; // Total time per slide (4000ms)
+        const frameRate = 50;       // Animation update frequency (50ms)
+        const step = 360 / (slideDuration / frameRate); // Degrees to move per frame
+
+        let progress = 0;
+        let activeIndex = 0;
+        let circleTimer;
+
+        // --- Core Functions ---
+
+        /* Reset all thumbs to gray */
+        function resetThumbs() {
+            thumbs.forEach(t =>
+                t.style.background = "conic-gradient(#0d6efd 0deg, #ddd 0deg)"
+            );
+        }
+
+        /* Animation Loop */
+        function animateCircle() {
+            progress += step;
+
+            // Visual Update
+            if (thumbs[activeIndex]) {
+                thumbs[activeIndex].style.background =
+                    `conic-gradient(#0d6efd ${progress}deg, #ddd 0deg)`;
+            }
+
+            // Logic Check: Time to move?
+            if (progress >= 360) {
+                progress = 0;
+                clearInterval(circleTimer); // Pause timer briefly
+                carousel.next();            // Trigger the slide move
+            }
+        }
+
+        /* Start/Restart Timer */
+        function startCircle() {
+            clearInterval(circleTimer); // Clear old interval
+            circleTimer = setInterval(animateCircle, frameRate);
+        }
+
+        // --- Event Listeners ---
+
+        // 1. When the slide STARTS to transition
+        slider.addEventListener('slide.bs.carousel', function (e) {
+            activeIndex = e.to; // Update the index
+            progress = 0;       // Reset progress
+            resetThumbs();      // Reset visuals
+            startCircle();      // Restart timer immediately
+        });
+
+        // 2. Manual Click on Thumbs
+        thumbs.forEach((thumb, index) => {
+            thumb.addEventListener('click', () => {
+                if (index !== activeIndex) { // Only if clicking a different slide
+                    progress = 0;
+                    activeIndex = index;
+                    carousel.to(index); // Move carousel
+                }
+            });
+        });
+
+        // --- Init ---
+        startCircle();
+
+    </script>
+
+</body>
+
+</html>
